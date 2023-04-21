@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   image: {
-    marginRight: 10,
+    marginRight: 7,
   },
 });
 

@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     backgroundColor: colors.light,
-    borderRadius: 15,
+    borderRadius: 5,
     height: 100,
     justifyContent: "center",
     overflow: "hidden",
