@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "DoneWithIt",
-    "slug": "DoneWithIt",
+    "name": "Over-it-2",
+    "slug": "Over-it-2",
+    "plugins": ["expo-image-picker"],
     "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
