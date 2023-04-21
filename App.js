@@ -17,16 +17,12 @@ export default function App() {
     requestPermission();
   }, []);
 
-  const selectImage = async () => {
-    const result = await ImagePicker.launchImageLibraryAsync();
-    if (!result.canceled) setImageUri(result.assets[0].uri);
-  };
-
   return (
     <Screen>
-      <Button title="select image" onPress={selectImage} />
-      <Image source={{ uri: imageUri }} style={{ width: 200, height: 200 }} />
-      <ImageInput imageUri={imageUri} />
+      <ImageInput
+        onChangeImage={(uri) => setImageUri(uri)}
+        imageUri={imageUri}
+      />
     </Screen>
   );
 }
