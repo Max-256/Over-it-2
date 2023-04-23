@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Text } from "react-native";
+import { Animated, Button, Text } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 
@@ -24,7 +24,13 @@ const TweetDetails = ({ route }) => (
 const Stack = createStackNavigator();
 
 const StackNavigator = () => (
-  <Stack.Navigator initialRouteName="Tweets">
+  <Stack.Navigator
+    initialRouteName="Tweets"
+    screenOptions={{
+      headerStyle: { backgroundColor: "dodgerblue" },
+      headerTintColor: "white",
+    }}
+  >
     <Stack.Screen name="Tweets" component={Tweets} />
     <Stack.Screen
       name="TweetDetails"
