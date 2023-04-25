@@ -9,6 +9,7 @@ const FeedNavigator = () => (
   <Stack.Navigator
     screenOptions={{
       presentation: "card",
+      headerShown: false,
     }}
   >
     <Stack.Screen name="Listings" component={ListingsScreen} />
