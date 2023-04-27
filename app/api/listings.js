@@ -1,7 +1,7 @@
 import client from "./client";
 
-const endPoint = "./listings";
+const endPoint = "/listings";
 
 export const getListings = () => {
-  client.get(endPoint);
+  return client.get(endPoint);
 };
