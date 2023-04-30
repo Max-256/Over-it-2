@@ -10,10 +10,8 @@ export default function App() {
   console.log(netInfo.isInternetReachable);
 
   return (
-    // <NavigationContainer theme={navigationTheme}>
-    //   <AppNavigator />
-    // </NavigationContainer>
-
-    null
+    <NavigationContainer theme={navigationTheme}>
+      <AppNavigator />
+    </NavigationContainer>
   );
 }
